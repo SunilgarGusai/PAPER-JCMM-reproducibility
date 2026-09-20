@@ -12,9 +12,11 @@
 
 - `code/paper022_analysis_v2.py` - primary 30-seed mix-design-grouped analysis.
 - `code/paper022_sensitivity_v2.py` - fixed Random-Forest and support-threshold sensitivity analyses.
+- `code/export_summary_v2.py` - converts the complete replicate-level output to the flat summary schema used by the figure script and archived manuscript summary.
 - `code/make_figures_v2.py` - deterministic manuscript-figure generation.
 - `code/verify_v2_saved_results.py` - deterministic sentinel verifier to run after the primary analysis has generated `all_replicates_v2.csv`.
 - `results_v2/submission_summary_v2.csv` - aggregated primary results used in the manuscript.
+- `results_v2/table2_graded_shift_R1.csv` and `results_v2/table3_hard_regime_R1.csv` - final R1 table source values.
 - `results_v2/model_sensitivity_random_forest_v2.csv` and `model_sensitivity_random_forest_summary_v2.csv` - fixed 10-seed model sensitivity.
 - `results_v2/support_threshold_sensitivity_v2.csv` - support-threshold sensitivity.
 - `results_v2/data_audit_v2.json` - row, exact-predictor and physical-mix counts plus source-data checksum.
@@ -46,14 +48,13 @@ python -m venv .venv
 # Linux/macOS: source .venv/bin/activate
 pip install -r requirements.txt
 python code/paper022_analysis_v2.py
+python code/export_summary_v2.py
 python code/paper022_sensitivity_v2.py
-```
-
-The primary script writes `results_v2/all_replicates_v2.csv`, `submission_summary_v2.csv`, the repetition-count audit and environment/design metadata. After those outputs exist, run:
-
-```bash
+python code/make_figures_v2.py
 python code/verify_v2_saved_results.py
 ```
+
+The primary script writes `results_v2/all_replicates_v2.csv`, the repetition-count audit and environment/design metadata. `export_summary_v2.py` then writes the flat `submission_summary_v2.csv` schema used by the archived manuscript summary and figure script.
 
 The sentinel verifier regenerates the strongest graded shift and the hard No-SCM holdout for seed 20260901 and compares seven headline fields for both Split-CP and Estimated-WCP with absolute tolerance `1e-12`.
 
