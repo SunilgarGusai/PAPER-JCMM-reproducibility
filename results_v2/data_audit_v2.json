@@ -1,0 +1,36 @@
+{
+  "n_rows": 1030,
+  "n_unique_exact_8_predictor_rows": 992,
+  "n_unique_7_component_mix_designs": 427,
+  "duplicate_rows_by_exact_8_predictors": 38,
+  "rows_beyond_unique_mix_designs": 603,
+  "regime_counts_rows": {
+    "Slag-only": 334,
+    "Fly-ash-only": 239,
+    "No-SCM": 232,
+    "Dual-SCM": 225
+  },
+  "regime_counts_mix_designs": {
+    "Dual-SCM": 120,
+    "Fly-ash-only": 95,
+    "No-SCM": 88,
+    "Slag-only": 124
+  },
+  "age_counts": {
+    "1": 2,
+    "3": 134,
+    "7": 126,
+    "14": 62,
+    "28": 425,
+    "56": 91,
+    "90": 54,
+    "91": 22,
+    "100": 52,
+    "120": 3,
+    "180": 26,
+    "270": 13,
+    "360": 6,
+    "365": 14
+  },
+  "sha256": "27d7cf5170e65f866f7f1dcc8beabadfe8439efa083ad8cdd4764a6f75d8002e"
+}
