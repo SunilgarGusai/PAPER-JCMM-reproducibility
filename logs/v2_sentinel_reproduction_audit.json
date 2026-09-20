@@ -1,0 +1,41 @@
+{
+  "structural": {
+    "all_primary_cells_have_30": true,
+    "n_cells": 24,
+    "mix_designs": 427,
+    "exact8": 992,
+    "rows": 1030,
+    "sentinel_all_pass": true,
+    "max_abs_difference": 1.7763568394002505e-15
+  },
+  "sentinel_checks": [
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"coverage","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"mae","difference":8.881784197001252e-16,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"rmse","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"r2","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"mean_width_finite","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"infinite_frac","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Split-CP","field":"support_rate","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"coverage","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"mae","difference":8.881784197001252e-16,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"rmse","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"r2","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"mean_width_finite","difference":0.0,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"infinite_frac","difference":5.551115123125783e-17,"pass":true},
+    {"scenario":"SCM-enrichment-2.5","seed":20260901,"method":"Estimated-WCP","field":"support_rate","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"coverage","difference":5.551115123125783e-17,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"mae","difference":1.7763568394002505e-15,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"rmse","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"r2","difference":5.551115123125783e-17,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"mean_width_finite","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"infinite_frac","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Split-CP","field":"support_rate","difference":2.7755575615628914e-17,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"coverage","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"mae","difference":1.7763568394002505e-15,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"rmse","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"r2","difference":5.551115123125783e-17,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"mean_width_finite","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"infinite_frac","difference":0.0,"pass":true},
+    {"scenario":"Holdout-No-SCM","seed":20260901,"method":"Estimated-WCP","field":"support_rate","difference":2.7755575615628914e-17,"pass":true}
+  ]
+}
