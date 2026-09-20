@@ -141,3 +141,12 @@ The custom analysis code in this repository is released under the **MIT License*
 **Dr. Sunilgar L. Gusai**  
 Faculty of Computer Applications, Marwadi University, Rajkot, Gujarat, India  
 ORCID: https://orcid.org/0009-0004-0739-4812
+
+## Academic profile and related research
+
+This repository is part of the open-research programme of **Dr. Sunilgar L. Gusai**, spanning spectral graph theory, network science and reproducible computational modelling.
+
+- Academic portfolio: https://sunilgargusai.github.io/sunilgar-portfolio/
+- GitHub profile: https://github.com/SunilgarGusai
+- ORCID: https://orcid.org/0009-0004-0739-4812
+- Related VELE / power-grid repository: https://github.com/SunilgarGusai/VELE-PowerGrid-Reproducibility
