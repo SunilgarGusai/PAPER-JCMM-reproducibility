@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 
-ROOT=Path(__file__).resolve().parents[2]
-RES=ROOT/'reproducibility'/'results_v2'
+ROOT=Path(__file__).resolve().parents[1]
+RES=ROOT/'results_v2'
 FIG=ROOT/'figures'
 FIG.mkdir(exist_ok=True)
 summary=pd.read_csv(RES/'submission_summary_v2.csv')
