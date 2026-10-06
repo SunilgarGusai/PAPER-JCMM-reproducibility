@@ -1,0 +1,9 @@
+name: paper022-conformal-concrete
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy=2.3.5
+  - pandas=2.2.3
+  - scikit-learn=1.8.0
+  - matplotlib=3.10.8
