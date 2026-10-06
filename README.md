@@ -1,11 +1,10 @@
-# PAPER022 — Reproducibility Repository
+# Calibration Transfer of Conformal Prediction — Reproducibility Repository
 
-## Calibration Transfer of Conformal Prediction for Concrete Strength Across SCM Composition Regimes
+## Concrete Strength Across SCM Composition Regimes
 
 **Author:** Sunilgar L. Gusai  
 **ORCID:** https://orcid.org/0009-0004-0739-4812  
-**Target journal:** *Journal of Computers, Mechanical and Management (JCMM)*  
-**Project ID:** PAPER022  
+**Associated manuscript:** submitted to *Journal of Computers, Mechanical and Management (JCMM)*  
 **Repository:** https://github.com/SunilgarGusai/PAPER-JCMM-reproducibility
 
 This repository provides the public reproducibility materials accompanying the manuscript **“Calibration Transfer of Conformal Prediction for Concrete Strength Across SCM Composition Regimes.”** The study examines how conformal prediction behaves when concrete-strength models are transferred across physically interpretable supplementary cementitious material (SCM) composition shifts.
@@ -123,6 +122,10 @@ The archived verification audit records:
 - maximum absolute stored-versus-regenerated discrepancy: `1.7763568394002505e-15`.
 
 Every headline numerical result in the revised manuscript is traceable to machine-readable outputs. Scientific figures are generated programmatically from those outputs and are not manually redrawn.
+
+## Scope and limitations
+
+This repository supports reproducibility of the reported computational study. It does not claim finite-sample conformal guarantees under arbitrary clustered or distribution-shifted deployment settings; coverage is interpreted empirically under the declared grouped and transfer designs. The public repository also does not redistribute the upstream UCI dataset.
 
 ## Citation
 
