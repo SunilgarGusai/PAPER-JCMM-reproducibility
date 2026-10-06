@@ -9,3 +9,21 @@ authors:
 year: 2026
 license: MIT
 repository-code: "https://github.com/SunilgarGusai/PAPER-JCMM-reproducibility"
+abstract: "Public reproducibility materials for grouped and distribution-shift evaluation of split and weighted conformal prediction for concrete compressive strength across supplementary-cementitious-material composition regimes."
+keywords:
+  - conformal prediction
+  - uncertainty quantification
+  - concrete compressive strength
+  - supplementary cementitious materials
+  - covariate shift
+  - grouped validation
+  - machine learning
+  - reproducible research
+preferred-citation:
+  type: article
+  title: "Calibration Transfer of Conformal Prediction for Concrete Strength Across SCM Composition Regimes"
+  authors:
+    - family-names: Gusai
+      given-names: Sunilgar L.
+      orcid: "https://orcid.org/0009-0004-0739-4812"
+  notes: "Manuscript submitted to Journal of Computers, Mechanical and Management. Final bibliographic metadata and DOI will be added after publication."
