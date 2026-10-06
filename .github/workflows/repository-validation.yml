@@ -1,0 +1,72 @@
+name: Repository verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install pinned dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compile public analysis code
+        run: python -m compileall -q code
+
+      - name: Verify public reproducibility artefacts
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import pandas as pd
+
+          root = Path(".")
+          required = [
+              "CITATION.cff",
+              "LICENSE",
+              "DATA_LICENSE.md",
+              "DATA_SOURCE_MANIFEST.md",
+              "README_REPRODUCIBILITY.md",
+              "requirements.txt",
+              "environment.yml",
+              "results_v2/submission_summary_v2.csv",
+              "results_v2/table2_graded_shift_R1.csv",
+              "results_v2/model_sensitivity_random_forest_summary_v2.csv",
+              "results_v2/support_threshold_sensitivity_v2.csv",
+              "results_v2/data_audit_v2.json",
+              "results_v2/repetition_counts_v2.csv",
+              "results_v2/environment_and_design_v2.json",
+              "logs/v2_sentinel_reproduction_audit.json",
+          ]
+          missing = [p for p in required if not (root / p).exists()]
+          assert not missing, f"Missing public artefacts: {missing}"
+
+          audit = json.loads((root / "logs/v2_sentinel_reproduction_audit.json").read_text())
+          structural = audit["structural"]
+          assert structural["rows"] == 1030
+          assert structural["mix_designs"] == 427
+          assert structural["n_cells"] == 24
+          assert structural["all_primary_cells_have_30"] is True
+          assert structural["sentinel_all_pass"] is True
+
+          summary = pd.read_csv(root / "results_v2/submission_summary_v2.csv")
+          assert len(summary) > 0
+          counts = pd.read_csv(root / "results_v2/repetition_counts_v2.csv")
+          assert len(counts) > 0
+
+          print("Public repository artefacts and frozen audit invariants verified.")
