@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="ttl desc">
+<title id="ttl">Calibration Transfer of Conformal Prediction</title>
+<desc id="desc">Scientific illustration of interval calibration across composition regimes. The intervals are schematic and do not show experimental results.</desc>
+<defs>
+<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071425"/><stop offset=".55" stop-color="#11284e"/><stop offset="1" stop-color="#1b224c"/></linearGradient>
+<linearGradient id="grad"><stop stop-color="#72caff"/><stop offset="1" stop-color="#a28bff"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#90b9ff" stop-opacity=".27"/><stop offset="1" stop-color="#90b9ff" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="300" rx="22" fill="url(#bg)"/>
+<circle cx="955" cy="135" r="235" fill="url(#glow)"/>
+<text x="60" y="55" fill="#8bc0ff" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">REPRODUCIBLE SCIENTIFIC MODELLING</text>
+<text x="60" y="115" fill="#ffffff" font-family="Arial,sans-serif" font-size="41" font-weight="800">Calibration Transfer</text>
+<text x="60" y="161" fill="#ffffff" font-family="Arial,sans-serif" font-size="41" font-weight="800">of Conformal Prediction</text>
+<path d="M60 189H603" stroke="url(#grad)" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+<text x="60" y="233" fill="#c3d5f0" font-family="Arial,sans-serif" font-size="18">Concrete strength · Composition regimes · Prediction intervals</text>
+<g fill="none" stroke="#749ac6" stroke-width="1.4" opacity=".30">
+<path d="M660 235H1138 M660 235V48"/><path d="M660 188H1138 M660 142H1138 M660 96H1138"/></g>
+<g stroke-width="7" stroke-linecap="round">
+<path d="M712 145H1004" stroke="#6aa8ed" opacity=".42"/>
+<path d="M747 115H965" stroke="#80b8ff" opacity=".6"/>
+<path d="M790 170H1090" stroke="#a78bfa" opacity=".65"/>
+</g>
+<g stroke="#ecf5ff" stroke-width="3">
+<path d="M712 131V159 M1004 131V159 M747 101V129 M965 101V129 M790 156V184 M1090 156V184"/>
+</g>
+<g fill="#d5eeff"><circle cx="846" cy="145" r="7"/><circle cx="858" cy="115" r="7"/><circle cx="960" cy="170" r="7"/></g>
+<text x="675" y="273" fill="#94b2d8" font-family="Arial,sans-serif" font-size="13">Illustrative intervals, not empirical coverage claims</text>
+</svg>

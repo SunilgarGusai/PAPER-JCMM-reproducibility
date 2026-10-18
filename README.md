@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/assets/repository-banner.gif" alt="Illustrated animated banner for conformal prediction calibration research" width="100%" /></p>
+
 # Calibration Transfer of Conformal Prediction — Reproducibility Repository
 
 ## Concrete Strength Across SCM Composition Regimes
